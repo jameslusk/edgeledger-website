@@ -43,6 +43,11 @@
   color: #333;
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
 /* Flex Items */
 
 .flex-items {
@@ -58,6 +63,9 @@
 }
 
 /* Flex Columns */
+.flex-columns.flex-reverse .row{
+  flex-direction: row-reverse;
+}
 
 .flex-columns .row {
   display: flex;
@@ -104,3 +112,38 @@
 .flex-columns p {
   margin: 20px 0;
 }
+
+/* SECTION HEADER */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* FLEX GRID */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
